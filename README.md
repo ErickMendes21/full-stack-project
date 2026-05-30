@@ -1,14 +1,14 @@
 # 🔐 Authentication System
 
-Projeto full stack de autenticação com frontend e backend separados, desenvolvido utilizando React + TypeScript no frontend e Node.js com Fastify no backend.
+Full-stack authentication project with separate frontend and backend, developed using React + TypeScript on the frontend and Node.js with Fastify on the backend.
 
-Atualmente o projeto possui apenas a **tela de login**, mas novas funcionalidades serão implementadas futuramente.
+Currently, the project includes both **login** and **registration screens**, but new features will be implemented in the future.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 ### Frontend
 - React + TypeScript
-- Responsividade com: responsively
+- Responsiveness with Responsively
 
 ### Backend
 - Node.js
@@ -18,34 +18,34 @@ Atualmente o projeto possui apenas a **tela de login**, mas novas funcionalidade
 - Bcrypt
 - CORS
 
-### Banco de Dados & Deploy
+### Database & Deployment
 - PostgreSQL
-- Neon(DB)
-- Render (Hospedagem do backend)
+- NeonDB
+- Render (Backend hosting)
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
 ```txt
 music-player/
 │
-├── frontend/    # Aplicação React + TypeScript
+├── frontend/    # React + TypeScript application
 │
-└── backend/     # API com Fastify + PostgreSQL
+└── backend/     # API with Fastify + PostgreSQL
 ```
 
 ---
 
-## ⚙️ Como Rodar o Projeto
+## ⚙️ How to Run the Project
 
-### 1. Clone o repositório
+### 1. Clone the repository
 
 ```bash
-git clone <url-do-repositorio>
+git clone <repository-url>
 ```
 
-Entre na pasta do projeto:
+Go to the project folder:
 
 ```bash
 cd music-player
@@ -53,50 +53,76 @@ cd music-player
 
 ---
 
-## 💻 Rodando o Frontend
+### 2. Create a NeonDB Database
 
-Entre na pasta do frontend:
+Before running the project, you must create a PostgreSQL database in NeonDB.
+
+1. Create an account on NeonDB  
+2. Create a new PostgreSQL project/database  
+3. Copy your database connection string
+
+Example:
+
+```env
+DATABASE_URL=postgresql://username:password@host/database?sslmode=require
+```
+
+Add the connection string to a `.env` file inside the backend folder.
+
+Example:
+
+```env
+DATABASE_URL=your_neondb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## 💻 Running the Frontend
+
+Go to the frontend folder:
 
 ```bash
 cd frontend
 ```
 
-Instale as dependências:
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Execute o projeto:
+Run the project:
 
 ```bash
 npm run dev
 ```
 
-O frontend será iniciado localmente.
+The frontend will start locally.
 
 ---
 
 ## 🌐 Backend
 
-O backend está hospedado no Render e é consumido pelo frontend.
+The backend is hosted on Render and is consumed by the frontend.
 
-Tecnologias utilizadas no backend:
+### Backend Technologies
 
 - Node.js
 - Fastify
-- JWT para autenticação
-- Bcrypt para criptografia de senha
-- PostgreSQL com NeonDB
+- JWT for authentication
+- Bcrypt for password hashing
+- PostgreSQL with NeonDB
 
 ---
 
-## 🔒 Funcionalidades Atuais
+## 🔒 Current Features
 
-- Tela de login
-- Integração frontend ↔ backend
-- Autenticação utilizando JWT
-- Hash de senha utilizando Bcrypt
+- Login screen
+- Registration screen
+- Frontend ↔ backend integration
+- JWT-based authentication
+- Password hashing with Bcrypt
 
 ---
 
@@ -107,9 +133,9 @@ Computer Engineering Student passionate about software development, algorithms, 
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sendo desenvolvido para fins de estudo e portfólio.
+This project is being developed for study and portfolio purposes.
 
 ---
 
