@@ -7,8 +7,8 @@ Atualmente o projeto possui apenas a **tela de login**, mas novas funcionalidade
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend
-- :contentReference[oaicite:0]{index=0} + TypeScript
-- Responsividade com :contentReference[oaicite:1]{index=1}
+- React + TypeScript
+- Responsividade com: responsively
 
 ### Backend
 - Node.js
@@ -20,15 +20,15 @@ Atualmente o projeto possui apenas a **tela de login**, mas novas funcionalidade
 
 ### Banco de Dados & Deploy
 - PostgreSQL
-- :contentReference[oaicite:2]{index=2} (NeonDB)
-- :contentReference[oaicite:3]{index=3} (Hospedagem do backend)
+- Neon(DB)
+- Render (Hospedagem do backend)
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```txt
-project/
+music-player/
 │
 ├── frontend/    # Aplicação React + TypeScript
 │
@@ -48,7 +48,7 @@ git clone <url-do-repositorio>
 Entre na pasta do projeto:
 
 ```bash
-cd nome-do-projeto
+cd music-player
 ```
 
 ---
@@ -100,29 +100,17 @@ Tecnologias utilizadas no backend:
 
 ---
 
-## 📌 Próximas Implementações
+## 👨‍💻 Author
 
-- Cadastro de usuário
-- Recuperação de senha
-- Dashboard do sistema
-- Controle de autenticação
-- Persistência de sessão
-- Melhorias de UI/UX
-- Responsividade completa
-
----
-
-## 🛠️ Ambiente de Desenvolvimento
-
-Ferramentas utilizadas durante o desenvolvimento:
-
-- :contentReference[oaicite:4]{index=4}
-- :contentReference[oaicite:5]{index=5}
-- PostgreSQL
-- Render
+**Erick Mendes Rocha**  
+Computer Engineering Student passionate about software development, algorithms, and technology.
 
 ---
 
 ## 📄 Licença
 
 Este projeto está sendo desenvolvido para fins de estudo e portfólio.
+
+---
+
+⭐ If you find this repository useful, feel free to star it!
