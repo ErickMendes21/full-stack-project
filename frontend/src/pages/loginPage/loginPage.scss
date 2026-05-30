@@ -1,0 +1,279 @@
+@use '../../styles/colors.scss';
+
+.mainCenterLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/backgroundLogin/loginBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.borderLogin {
+    border-radius: 10px;
+    width: 448px;
+    max-width: 90%;
+    height: 633px;
+    max-height: 90vh;
+    background: radial-gradient(
+        circle at bottom,
+        var(--background-login-secondary),
+        var(--background-login-primary) 70%
+    );
+}
+
+.titleLogin {
+    text-align: center;
+}
+
+.titleLogin, .formLogin {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mainTitleLogin {
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans';
+}
+
+.paragraphLogin {
+    color: var(--text-secondary);
+    font-family: 'Inter';
+}
+
+.firstInputLogin {
+    margin-top: 5px;
+    color: var(--text-secondary);
+}
+
+.secondInputLogin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.paragraphEmailLogin {
+    font-family: 'Inter';
+}
+
+.paragraphPasswordLogin {
+    color: var(--text-secondary);
+    font-family: 'Inter';
+}
+
+.paragraphForgotLogin {
+    color: var(--accent-light);
+    cursor: pointer;
+    font-family: 'Inter';
+    transition: all 0.25s ease;
+}
+
+.paragraphForgotLogin:active {
+    transform: scale(0.98);
+}
+
+.paragraphForgotLogin:hover {
+    color: var(--accent-primary);
+}
+
+.passwordContainerInput {
+    position: relative;
+    width: 100%;
+}
+
+.eyeIconLogin {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--text-primary);
+}
+
+.inputLogin {
+    width: 366px;
+    height: 49px;
+    border-radius: 12px;
+    background-clip: padding-box;
+    background: radial-gradient(
+        circle at bottom,
+        var(--background-input-secondary),
+        var(--background-input-primary) 70%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    outline: none;
+    color: var(--text-primary);
+    padding-left: 10px;
+    transition: all 0.25s ease;
+}
+
+.inputLogin:hover {
+    border-color: rgba(255, 43, 194, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.inputLogin:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 
+        0 0 0 1px rgba(255, 43, 194, 0.5),
+        0 0 12px rgba(255, 43, 194, 0.4);
+}
+
+.inputLogin:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.buttonLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    border-radius: 12px;
+    height: 48px;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    box-shadow: 0 0 10px var(--accent-primary),
+        0 0 20px var(--accent-primary),
+        0 0 40px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.buttonLogin:hover {
+    box-shadow: 
+        0 0 6px rgba(255, 43, 194, 0.3),
+        0 0 12px rgba(255, 43, 194, 0.2);
+    
+    transform: translateY(-1px);
+}
+
+.buttonLogin:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans';
+}
+
+.login:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.dividerLogin {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-muted);
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.dividerLogin::before,
+.dividerLogin::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.dividerLogin::before {
+  margin-right: 10px;
+}
+
+.dividerLogin::after {
+  margin-left: 10px;
+}
+
+.googleLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    border-radius: 12px;
+    height: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.googleLogin:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 43, 194, 0.8);
+
+    box-shadow: 
+        0 0 10px rgba(255, 43, 194, 0.3),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+    transform: translateY(-2px);
+}
+
+.googleLogin:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.googleLogin svg {
+    position: relative;
+    right: 90px;
+}
+
+.googleParagraphLogin {
+    margin-left: -30px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.singUpLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.accountButtonLogin {
+    color: var(--text-primary);
+    font-family: 'Inter';
+}
+
+.singUpButtonLogin {
+    color: var(--accent-light);
+    margin-left: 5px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+.singUpButtonLogin:active {
+    transform: scale(0.98);
+}
+
+.singUpButtonLogin:hover {
+    color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+    .inputLogin {
+        width: 320px;
+    }
+
+    .buttonLogin {
+      width: 200px;
+      margin: 36px auto 0 auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .inputLogin {
+        width: 220px;
+    }
+
+    .buttonLogin {
+      width: 200px;
+      margin: 36px auto 0 auto;
+    }
+}

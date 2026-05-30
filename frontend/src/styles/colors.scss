@@ -1,0 +1,38 @@
+:root {
+    /* Backgrounds */
+    --background-login-primary: #0B0010;
+    --background-login-secondary: #2B0033;
+    --background-input-primary: #0e0014;
+    --background-input-secondary: #130013;
+
+    /* Text Colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #DDBED1;
+    --text-muted: #AAAAAA;
+
+    /* Accent / Pink */
+    --accent-primary: #FF2BC2;
+    --accent-secondary: #FF24E4;
+    --accent-light: #FFACE8;
+
+    /* Borders */
+    --border-primary: rgba(255, 255, 255, 0.15);
+    --border-hover: rgba(255, 43, 194, 0.6);
+    --border-hover-strong: rgba(255, 43, 194, 0.8);
+
+    /* Shadows */
+    --shadow-pink-light: rgba(255, 43, 194, 0.2);
+    --shadow-pink-medium: rgba(255, 43, 194, 0.3);
+    --shadow-pink-strong: rgba(255, 43, 194, 0.4);
+    --shadow-pink-focus: rgba(255, 43, 194, 0.5);
+
+    /* Transparent Backgrounds */
+    --bg-glass-light: rgba(255, 255, 255, 0.05);
+    --bg-glass-hover: rgba(255, 255, 255, 0.06);
+
+    /* Divider */
+    --divider-color: #5a0000;
+
+    /* Shadow Dark */
+    --shadow-dark: rgba(0, 0, 0, 0.6);
+}

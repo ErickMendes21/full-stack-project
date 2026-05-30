@@ -1,0 +1,260 @@
+.mainCenterRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/backgroundLogin/loginBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.borderRegister {
+    border-radius: 10px;
+    width: 448px;
+    max-width: 90%;
+    height: 730px;
+    max-height: 90vh;
+    background: radial-gradient(circle at bottom, var(--background-login-secondary), var(--background-login-primary) 70%);
+}
+
+.titleRegister {
+    text-align: center;
+}
+
+.titleRegister, .formRegister {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mainTitleRegister {
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans';
+}
+
+.paragraphRegister {
+    color: var(--text-secondary);
+    font-family: 'Inter';
+}
+
+.firstInputRegister {
+    margin-top: 5px;
+    color: var(--text-secondary);
+}
+
+.secondInputRegister {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.paragraphEmailRegister {
+    font-family: 'Inter';
+}
+
+.paragraphPasswordRegister, .paragraphRePasswordRegister {
+    color: var(--text-secondary);
+    font-family: 'Inter';
+}
+
+.paragraphRePasswordRegister {
+    margin-top: 20px;
+}
+
+.paragraphForgot {
+    color: var(--accent-light);
+    cursor: pointer;
+    font-family: 'Inter';
+}
+
+.passwordContainerRegister {
+    position: relative;
+    width: 100%;
+}
+
+.eyeIconRegister {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--text-primary);
+}
+
+.inputRegister {
+    width: 366px;
+    height: 49px;
+    border-radius: 12px;
+    background-clip: padding-box;
+    background: radial-gradient(circle at bottom, var(--background-input-secondar), var(--background-input-primary) 70%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    outline: none;
+    color: var(--text-primary);
+    padding-left: 10px;
+    transition: all 0.25s ease;
+}
+
+.inputRegister:hover {
+    border-color: rgba(255, 43, 194, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.inputRegister:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 
+        0 0 0 1px rgba(255, 43, 194, 0.5),
+        0 0 12px rgba(255, 43, 194, 0.4);
+}
+
+.inputRegister:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.buttonRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    border-radius: 12px;
+    height: 48px;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    box-shadow: 0 0 10px var(--accent-primary),
+        0 0 20px var(--accent-primary),
+        0 0 40px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.buttonRegister:hover {
+    box-shadow: 
+        0 0 6px rgba(255, 43, 194, 0.3),
+        0 0 12px rgba(255, 43, 194, 0.2);
+    
+    transform: translateY(-1px);
+}
+
+.buttonRegister:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans';
+}
+
+.dividerRegister {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-muted);
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.dividerRegister::before,
+.dividerRegister::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.dividerRegister::before {
+  margin-right: 10px;
+}
+
+.dividerRegister::after {
+  margin-left: 10px;
+}
+
+.googleRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    border-radius: 12px;
+    height: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.googleRegister:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 43, 194, 0.8);
+
+    box-shadow: 
+        0 0 10px rgba(255, 43, 194, 0.3),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+    transform: translateY(-2px);
+}
+
+.googleRegister:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(255, 43, 194, 0.3);
+}
+
+.googleRegister svg {
+    position: relative;
+    right: 90px;
+}
+
+.googleParagraphRegister {
+    margin-left: -30px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.singUpRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.accountButtonRegister {
+    color: var(--text-primary);
+    font-family: 'Inter';
+}
+
+.singUpButtonRegister {
+    color: var(--accent-light);
+    margin-left: 5px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+.singUpButtonRegister:active {
+    transform: scale(0.98);
+}
+
+.singUpButtonRegister:hover {
+    color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+    .inputRegister {
+        width: 320px;
+    }
+
+    .buttonRegister {
+      width: 200px;
+      margin: 36px auto 0 auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .inputRegister {
+        width: 220px;
+    }
+
+    .buttonRegister {
+      width: 200px;
+      margin: 36px auto 0 auto;
+    }
+
+}
