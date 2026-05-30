@@ -14,27 +14,37 @@ export default function RegisterPage() {
     const [viewPassword, setViewPassword] = useState<boolean>(false)
     const [viewRepeatPassword, setViewRepeatPassword] = useState<boolean>(false)
 
-    async function handleSignup() {
+    async function handleSignup(event: React.FormEvent) {
+        event.preventDefault()
 
         if (password !== confirmPassword) {
             alert('Passwords do not match')
             return
         }
 
-        const response = await fetch('http://localhost:3333/signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email,
-                password
+        try {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/signup`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
             })
-        })
 
-        const data = await response.json()
+            const data = await response.json()
 
-        console.log(data)
+            console.log(data)
+            setEmail('')
+            setPassword('')
+            setConfirmPassword('')
+        } catch (error) {
+            console.log(error)
+        } finally {
+            setLoading(false)
+        }
     }
 
     return (

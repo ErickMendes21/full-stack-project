@@ -19,7 +19,7 @@ export default function LoginPage() {
 
         try {
 
-            const response = await fetch('http://localhost:3333/signin',
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/signin`,
                 {
                     method: 'POST',
                     headers: {
