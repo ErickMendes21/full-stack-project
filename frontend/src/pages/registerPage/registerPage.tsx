@@ -37,9 +37,13 @@ export default function RegisterPage() {
             const data = await response.json()
 
             console.log(data)
-            setEmail('')
-            setPassword('')
-            setConfirmPassword('')
+
+            if (response.ok) {
+                setEmail('')
+                setPassword('')
+                setConfirmPassword('')
+            }
+
         } catch (error) {
             console.log(error)
         } finally {
